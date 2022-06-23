@@ -15,7 +15,6 @@ favFood();
 nationality();
 degree();
 beach();
-playGame();
 }
 
 
@@ -133,8 +132,6 @@ while(currentAttempts < maxAttempts && !finished){
     let answer = prompt(question);
     let realAnswer = parseInt(answer);
     let output = "Good Job";
-
-
     if (realAnswer > actualAnswer){
         output = "Too high";
     }else if (realAnswer < actualAnswer){
@@ -146,23 +143,33 @@ while(currentAttempts < maxAttempts && !finished){
     alert(output);
 }
 //Add a 7th question that has multiple possible correct answers that are stored in an array.
-let ask = [" 1.fries", "2.pizza","3.popcorn "];
-let foodQuestion="Which of these are my favorite foods"; [" 1.fries", "2.pizza","3.popcorn "]
-let correctAnswer= 0;
-let attempts = 0;
+let ask =("Name a couple of my favorite foods")
+let Arrayfood=["Frenchfries", "Pizza","Popcorn"];
+let correctAnswer= [0,1];
 let maxiAttempts =6;
+let Currattempts = 0;
+done = false
 //Give the user 6 attempts to guess the correct answer.
-for (var i = 0; i < ask.length; i++) {
-    var answer = prompt (ask[i][0]);
-    if (answer == ask[i][1]) {
-        prompt("Correct " + ask[i][1]);
-        correctAnswers++;
+for(let i=0; i < maxiAttempts && !done; i++){
+     answer = prompt (ask)
+    answer= answertoLowerCase
+    alert(" try again")
+    if (Arrayfood.includes(correctAnswer)){
+        alert("correct")
+        done = true      
+    }
+    alert(response)
+}
+alert("Here is your score!")
+alert ("My favorite:"+ foodsILike.toString ())
+        /*prompt("Correct " + foodQuestion[i][1]);
+        correctAnswer++;
     }
     else {
-        prompt ("Incorrect, the correct answer was "+ ask[i][1]);
+      /  prompt ("Incorrect, the correct answer was "+ foodQuestion[0,1]);
     }
 }
 
 //The guesses will end once the user guesses a correct answer or they run out of attempts.
 //Display all the possible correct answers to the user.
-//aConsider using a loop of some sort for this question.
+/*Consider using a loop of some sort for this question.*/
