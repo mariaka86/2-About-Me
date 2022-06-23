@@ -1,4 +1,11 @@
+/*  FILE: style.ccs
+    DATE: 2022-06-22
+*/
+
+
+
 body{
+
     background-color: aliceblue;
     margin: 0 auto;
 
@@ -10,6 +17,34 @@ body{
 h1{
 
     text-align:center;
-    text-size-adjust: 20px; 
+    font-size: larger;
+    font-weight: 200;
+    
+}
 
+h2{
+    text-align:center;
+    font-size: medium;
+}
+
+h3{
+    text-align:center;
+    font-size: medium;
+}
+
+h4{
+    text-align: left;
+    font-size: medium;
+
+}
+
+h5{
+    text-align:left;
+    font-size: medium;
+}
+
+h6{
+    text-align: left;
+    font-size:medium;
+    
 }

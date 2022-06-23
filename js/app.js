@@ -1,14 +1,33 @@
-/* File: app.js
-Date: 06/21/2022
-Author: Mary K
+/*  File: app.js
+    Date: 2022-06-21
+    Author: Mary K
 */
+"Use strict";
+
+var userInput;
+var foodsILike
+
+function initialize(){
+console.log ("in initialize()");
+userName();
+favActivities();
+favFood();
+nationality();
+degree();
+beach();
+playGame();
+}
+
+
+
+
 
 function userName () {
      userInput = prompt('What is your name ?');
       console.log('username',userName);
      
    }
-    userName ();
+   // userName ();
 //document.write('Hi' + userInput + 'thank you for visiting my page. Enjoy!' )
 let greetingSpan= document.getElementById('greetingSpan');
 greetingSpan.innerHTML='Hi '+ userInput +' thanks for visiting my page. Enjoy!';
@@ -29,7 +48,7 @@ function favActivities(){
     alert("Are you sure you want to know about me?")
 }
 }
-favActivities();
+//favActivities();
 
 function favFood(){
     let food =prompt("Out of my favorite food is pizza on there?");
@@ -43,7 +62,7 @@ function favFood(){
     alert("Go and check, im sure you'll find your answer")
  }
 }
-favFood();
+//favFood();
 
 
 function nationality(){
@@ -56,7 +75,7 @@ function nationality(){
     alert("Huh?")
  }
 }
-nationality();
+// nationality();
 
 function degree(){
     let degree= prompt("Did I receive and Applied Associates from Kirkwood?");
@@ -68,7 +87,7 @@ function degree(){
         alert("I don't know what you said but it was definitely not a degree in that");
     }
 }
-degree();
+// degree();
 
 function beach(){
     let beach= prompt("Based on what you know about me, would you guess I like the beach?")
@@ -80,4 +99,70 @@ function beach(){
         alert("hmm interesting");
     }
 }
-beach();
+//#2 
+/*let question ="How Many?";// define question
+let goalAnswer= 10;//arbitrary correct answer
+let finished = false; //success flag
+let maxAttempts = 4;//maximum number of attempts
+let currentAttempts= 0;//initialize the loop variable
+currentAttempts++; //increment the loop condiion variable
+while(currentAttempts < maxAttempts && !finished){
+let answer= prompt(question);
+let realAnswer= parseInt(answer);//how to convert string to number is parseInt
+// indicating through alert if guess is too high or low
+let goalAnswer=10; //arbitrary correct answer
+let output="";
+if (realAnswer > goalAnswer) {
+ output="Too high"; // so you only have to do an alert once(bottom of function alert(output);)
+} else if (realAnswer < goalAnswer){
+
+}else {
+    output= "Correct!;"
+    finished = true; //completion flag
+}
+alert(output);
+}
+*/
+let question= "Guess a number between 1 and 10?";
+let actualAnswer = 8;
+let finished = false;
+let maxAttempts= 4;
+let currentAttempts=0;
+while(currentAttempts < maxAttempts && !finished){
+    currentAttempts++
+    let answer = prompt(question);
+    let realAnswer = parseInt(answer);
+    let output = "Good Job";
+
+
+    if (realAnswer > actualAnswer){
+        output = "Too high";
+    }else if (realAnswer < actualAnswer){
+        output= "Too low";
+    }else{
+        output="Correct!";
+        finished = true;    
+    }
+    alert(output);
+}
+//Add a 7th question that has multiple possible correct answers that are stored in an array.
+let ask = [" 1.fries", "2.pizza","3.popcorn "];
+let foodQuestion="Which of these are my favorite foods"; [" 1.fries", "2.pizza","3.popcorn "]
+let correctAnswer= 0;
+let attempts = 0;
+let maxiAttempts =6;
+//Give the user 6 attempts to guess the correct answer.
+for (var i = 0; i < ask.length; i++) {
+    var answer = prompt (ask[i][0]);
+    if (answer == ask[i][1]) {
+        prompt("Correct " + ask[i][1]);
+        correctAnswers++;
+    }
+    else {
+        prompt ("Incorrect, the correct answer was "+ ask[i][1]);
+    }
+}
+
+//The guesses will end once the user guesses a correct answer or they run out of attempts.
+//Display all the possible correct answers to the user.
+//aConsider using a loop of some sort for this question.
