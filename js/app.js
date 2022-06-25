@@ -2,70 +2,66 @@
     Date: 2022-06-21
     Author: Mary K
 */
-"Use strict";
+'Use strict';
 
 // var userInput;
 // var foodsILike
 
 function initialize(){
-console.log ("in initialize()");
-// userName();
+  console.log ('in initialize()');
+  userName();
 // favActivities();
 // favFood();
 // nationality();
 // degree();
 // beach();
-    }
+}
 
-var increaseScore=0
+let increaseScore=0;
 
 function playGame() {
-    let questions=[
-        ["Do I like to run ?", "no"],
-        ["Out of my favorite food is pizza on there?", "yes"],
-        ["Was I born in the continent of America?", "no"],
-        ["Did I receive and Applied Associates from Kirkwood?", "no"],
-        ["Based on what you know about me, would you guess I like the beach?", "yes"] 
-    ] 
-    let score=0;
-    for(let i = 0; i < questions.length; i++) {
-        let userAnswer=prompt(questions[i][0]).toLowerCase();
-        if(userAnswer === questions[i][1]) {
-            increaseScore++;
-            alert('Correct!, ' + increaseScore);
+  let questions=[
+    ['Do I like to run ?', 'no'],
+    ['Out of my favorite food is pizza on there?', 'yes'],
+    ['Was I born in the continent of America?', 'no'],
+    ['Did I receive and Applied Associates from Kirkwood?', 'no'],
+    ['Based on what you know about me, would you guess I like the beach?', 'yes']
+  ];
+  let score=0;
+  for(let i = 0; i < questions.length; i++) {
+    let userAnswer=prompt(questions[i][0]).toLowerCase();
+    if(userAnswer === questions[i][1]) {
+      increaseScore++;
+      alert('Correct!, ' + increaseScore);
 
-            console.log('correct')
-            } else {
-            alert('InCorrect!');
-            console.log('incorrect');
-           }
-        }
-    
-
-        }
+      console.log('Good Job!');
+    } else {
+      alert('ehh wrong!');
+      //console.log('Nope,sorry');
+    }
+  }
 
 
+}
 
 
-       
 
 
-// function userName () {
-//      userInput = prompt('What is your name ?');
-//       console.log('username',userName);
-     
-//    }
-//    // userName ();
-// //document.write('Hi' + userInput + 'thank you for visiting my page. Enjoy!' )
-// let greetingSpan= document.getElementById('greetingSpan');
-// greetingSpan.innerHTML='Hi '+ userInput +' thanks for visiting my page. Enjoy!';
-   
-   
+
+
+
+function userName () {
+  let userInput = prompt('What is your name ?');
+  //console.log('username',userName);
+  let greetingSpan= document.getElementById('greetingSpan');
+  greetingSpan.innerHTML='Hi '+ userInput +' thanks for visiting my page. Enjoy!';
+
+}
 
 
 // function favActivities(){
 //     let activities= prompt("Do I like to run ?");
-//    // let answer 
+//    // let answer
 //     if(activities.toLowerCase()=== "yes") {
 //    //console.log("Good Job");
 //    alert( "You are Incorrect");
@@ -95,7 +91,7 @@ function playGame() {
 
 // function nationality(){
 //     let nationality =prompt("Was I born in the continent of America?");
-//     if(nationality.toLowerCase()==="yes") {   
+//     if(nationality.toLowerCase()==="yes") {
 //     alert("I was made in Africa");
 //  }else if(nationality.toLowerCase()==="no"){
 //     alert("you are correct.");
@@ -108,7 +104,7 @@ function playGame() {
 // function degree(){
 //     let degree= prompt("Did I receive and Applied Associates from Kirkwood?");
 //     if (degree.toLowerCase()==="yes"){
-//         alert("It was an associates of applied science");   
+//         alert("It was an associates of applied science");
 //     }else if(degree.toLowerCase()==="no"){
 //         alert("Correct");
 //     }else{
@@ -120,14 +116,14 @@ function playGame() {
 // function beach(){
 //     let beach= prompt("Based on what you know about me, would you guess I like the beach?")
 //     if (beach.toLowerCase()==="yes"){
-//         alert("of course I love the beach");    
+//         alert("of course I love the beach");
 //     }else if (beach.toLowerCase()==="no"){
 //         alert("incorrect");
 //     }else{
 //         alert("hmm interesting");
 //     }
 // }
-// //#2 
+// //#2
 // /*let question ="How Many?";// define question
 // let goalAnswer= 10;//arbitrary correct answer
 // let finished = false; //success flag
@@ -150,27 +146,29 @@ function playGame() {
 // }
 // alert(output);
 // }
-// */
-// let question= "Guess a number between 1 and 10?";
-// let actualAnswer = 8;
-// let finished = false;
-// let maxAttempts= 4;
-// let currentAttempts=0;
-// while(currentAttempts < maxAttempts && !finished){
-//     currentAttempts++
-//     let answer = prompt(question);
-//     let realAnswer = parseInt(answer);
-//     let output = "Good Job";
-//     if (realAnswer > actualAnswer){
-//         output = "Too high";
-//     }else if (realAnswer < actualAnswer){
-//         output= "Too low";
-//     }else{
-//         output="Correct!";
-//         finished = true;    
-//     }
-//     alert(output);
-// }
+// 
+function demoArrays() {
+  let question="Guess a number between 1 and 10?";
+  let actualAnswer = 8;
+  let finished = false;
+  let maxAttempts= 4;
+  let currentAttempts=0;
+  while(currentAttempts < maxAttempts && !finished){
+    currentAttempts++;
+    let answer = prompt(question);
+    let realAnswer = parseInt(answer);
+    let output = "Good Job";
+    if (realAnswer > actualAnswer){
+      output = "Too high";
+    }else if (realAnswer < actualAnswer){
+      output= "Too low";
+    }else{
+      output="Correct!";
+      finished = true;
+    }
+    alert(output);
+  }
+}
 // //Add a 7th question that has multiple possible correct answers that are stored in an array.
 // let ask =("Name a couple of my favorite foods")
 // let Arrayfood=["Frenchfries", "Pizza","Popcorn"];
@@ -185,13 +183,13 @@ function playGame() {
 //     alert(" try again")
 //     if (Arrayfood.includes(correctAnswer)){
 //         alert("correct")
-//         done = true      
+//         done = true
 //     }
 //     alert(response)
 // }
 // alert("Here is your score!")
 // alert ("My favorite:"+ foodsILike.toString ())
-        /*prompt("Correct " + foodQuestion[i][1]);
+/*prompt("Correct " + foodQuestion[i][1]);
         correctAnswer++;
     }
     else {

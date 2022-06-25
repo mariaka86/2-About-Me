@@ -5,11 +5,10 @@
 
 
 body{
-
-    background-color: aliceblue;
-    margin: 0 auto;
-
-
+    width:90%;
+    margin: 0, auto;
+    background-image:url(https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png);
+    background-size: 1550px,1550px;
 }
 
 
@@ -18,10 +17,11 @@ h1{
 
     text-align:center;
     font-size: larger;
-    font-weight: 200;
-    
+    font-weight: 100;
+    border: 500rem,black;
+    border-style: solid;
+    font-weight: bold;
 }
-
 h2{
     text-align:center;
     font-size: medium;
@@ -30,6 +30,9 @@ h2{
 h3{
     text-align:center;
     font-size: medium;
+}
+h3 ul{
+    text-align:left;
 }
 
 h4{
@@ -49,5 +52,5 @@ h6{
     
 }
 button{
-    align-items: center;
+    text-align: center;
 }
