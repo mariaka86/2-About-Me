@@ -8,7 +8,7 @@ body{
     width:90%;
     margin: 0, auto;
     background-image:url(https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png);
-    background-size: 1550px,1550px;
+    background-size: 2500px,2500px;
 }
 
 
@@ -16,20 +16,26 @@ body{
 h1{
 
     text-align:center;
-    font-size: larger;
+    font-size: 90px;
     font-weight: 100;
-    border: 500rem,black;
+    border: 1500rem,black;
     border-style: solid;
     font-weight: bold;
 }
 h2{
     text-align:center;
     font-size: medium;
+    border: 300rem, black;
+    border-style: dashed;
+    border-radius: 100px;
 }
 
 h3{
     text-align:center;
     font-size: medium;
+    border: 300rem, black;
+    border-style: dashed;
+    border-radius: 100px;
 }
 h3 ul{
     text-align:left;
