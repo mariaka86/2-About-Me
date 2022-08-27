@@ -55,7 +55,7 @@ function userName () {
 
 
 function demoArrays() {
-  let question="Guess a number between 1 and 10?";
+  let question='Guess a number between 1 and 10?';
   let actualAnswer = 8;
   let finished = false;
   let maxAttempts= 4;
@@ -64,13 +64,13 @@ function demoArrays() {
     currentAttempts++;
     let answer = prompt(question);
     let realAnswer = parseInt(answer);
-    let output = "Good Job";
+    let output = 'Good Job';
     if (realAnswer > actualAnswer){
-      output = "Too high";
+      output = 'Too high';
     }else if (realAnswer < actualAnswer){
-      output= "Too low";
+      output= 'Too low';
     }else{
-      output="Correct!";
+      output='Correct!';
       finished = true;
     }
     alert(output);

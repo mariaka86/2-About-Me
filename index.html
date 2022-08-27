@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF8"/>
+    <meta charset="UTF8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/style.css"/> 
-<title> About Me Project</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> About Me Project </title>
 </head>
+
 <body onload="initialize()">
 
 
-    <header> 
+    <header>
+        <a href="https://github.com/mariaka86" class="fa fa-github"></a>
         <h1> About Me Project</h1>
+
+
         <span id="greetingSpan"></span>
     </header>
 
-<main>
-<section>
-    <h2> Short Biography </h2>
-<p class="Biography"> My name is Mary, I was born in Africa and immigrated to the U.S when I was 7 years ago. I became very interested in coding when I was
-    a young adult in high school. I stayed interested in coding and vowed I would learn it someday. The summer of 2022 I finally got 
-    an opportunity. </p>
-
-<p> Lets Play a Game!</p>
-        <button onclick="playGame()"> Quizzical</button>
-        <button onclick="demoArrays()">Play Game</button>
-</section>
-    <h3> Education, Work Experiences and Goals!</h3>
-    <p> 
-        <ul>I graduated from Kirkwood Community College in 2020 through the infamous pandemic</ul>
-
-        <ul>I received an associates in applied sciences</ul>
-
-        <ul> i've been gaining experience in the healthcare field for the last 1.5 years </ul>
-         
-        <ul>My goal is to eventually procure a job in software engineering that could also
-        make use of my experience in the healthcare field.</ul>
-     </p>
+    <main>
+        <section>
+            <h2> Short Biography </h2>
+            <p class="Biography"> 
+                My name is Mary Kariuki, I'm currently a software development student. Before I got
+                into studying coding I worked in the healthcare field as a medical assistant; I'm transitioning into the
+                tech field because I've always wanted to be in it ,I just had no idea how to start.
+             </p>
 
 
+        </section>
+        <div id="experience">
+            <h3> Education, Work Experiences and Goals!</h3>
+            <p>
+            <ul>I graduated from Kirkwood Community College in 2020 through the infamous pandemic</ul>
 
+            <ul>I received an associates in applied sciences</ul>
 
-    <section>
-<h4> Top Ten Favorite Things!</h4>
-    <h5> Favorite food</h5>
-     <ul>
-        <li> Pizza</li>
-        <li> French Fries </li>
-        <li> Cantaloupe</li>
-        <li> Watermelon</li>
-        </ul>
-     <h6> Favorite Activities</h6>
-        <ol>
-            <li> Traveling</li>
-            <li> Hiking</li>
-            <li> Baking</li>
-            <li> Swimming</li>
-            <li> Sleeping</li>
-            <li> Walking</li>
+            <ul> I've been gaining experience in the healthcare field for the last 1.5 years </ul>
 
-        </ol>
-    </section>
-    <footer> &copy; made in kenya 1998</footer>
+            <ul>My goal is to eventually procure a job in software engineering.</ul>
+            </p>
+        </div>
+            <h4> Top Ten Favorite Things!</h4>
+            <h5> Favorite food</h5>
+            <ul>
+                <li> Pizza</li>
+                <li> French Fries </li>
+                <li> Cantaloupe</li>
+                <li> Watermelon</li>
+            </ul>
+            <div class=" activities">
+                <h6> Favorite Activities</h6>
+                <ul>
+                    <li> Traveling</li>
+                    <li> Hiking</li>
+                    <li> Baking</li>
+                    <li> Swimming</li>
+                    <li> Sleeping</li>
+                    <li> Walking</li>
 
-</main>
-<script src ="js/app.js"></script> 
+                </ul>
+            </div>
+            <div class = "games">
+            <p> Lets Play a Game!</p>
+            <button onclick="playGame()"> Quizzical</button>
+            <button onclick="demoArrays()">Play Game</button>
+        </div>
+        <footer> &copy; MaryKariuki</footer>
+
+    </main>
+    <script src="js/app.js"></script>
 </body>
 
 

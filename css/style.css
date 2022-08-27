@@ -7,10 +7,18 @@
 body{
     width:90%;
     margin: 0, auto;
-    background-image:url(https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png);
-    background-size: 2500px,2500px;
+    background-image:linear-gradient(to bottom right,#002f4b,#dc4225);
+    background-size: cover;
 }
 
+.activities{
+    position: relative;
+    left:80%;
+}
+.games{
+    position:relative;
+    bottom:55px;
+}
 
 
 h1{
@@ -20,22 +28,23 @@ h1{
     font-weight: 100;
     border: 1500rem,black;
     border-style: solid;
+    border-width: 5px;
     font-weight: bold;
 }
 h2{
     text-align:center;
     font-size: medium;
     border: 300rem, black;
-    border-style: dashed;
-    border-radius: 100px;
+    border-style: solid;
+
 }
 
 h3{
     text-align:center;
     font-size: medium;
     border: 300rem, black;
-    border-style: dashed;
-    border-radius: 100px;
+    border-style: solid;
+   
 }
 h3 ul{
     text-align:left;
@@ -57,6 +66,20 @@ h6{
     font-size:medium;
     
 }
+
 button{
     text-align: center;
+    font-size: 15px;
 }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  
+  }
+  .fa:hover {
+    opacity: 0.9;
+  }
